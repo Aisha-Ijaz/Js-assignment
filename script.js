@@ -73,11 +73,13 @@ function task7(){
     var int1 = parseInt(num1);
     var int2 = parseInt(num2);
 
-    // Add the integers
-    var sum = int1 + int2;
-
-    // Display result in alert
-    alert("The sum is: " + sum);
+    // Check if both are numbers
+if (isNaN(int1) || isNaN(int2)) {
+        alert("Error: Please enter valid numbers!");
+    } else {
+        var sum = int1 + int2;
+        alert("The sum is: " + sum);
+    }
 }
 
 function task8(){
